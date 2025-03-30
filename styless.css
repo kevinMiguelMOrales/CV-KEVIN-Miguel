@@ -1,0 +1,63 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    background-color: #000; /* Fondo negro */
+    color: #fff; /* Texto blanco */
+}
+
+.banner {
+    background-color: #2ecc71; /* Verde brillante */
+    text-align: center;
+    padding: 50px;
+}
+
+.logo {
+    width: 150px; /* Ajusta el tamaño según tu logo */
+}
+
+.carrusel {
+    position: relative;
+    max-width: 800px; /* Ajusta el tamaño del carrusel */
+    margin: auto;
+}
+
+.carrusel-contenido {
+    display: flex;
+    overflow: hidden;
+}
+
+.carrusel-contenido img {
+    width: 100%;
+    display: none; /* Escondemos todas las imágenes por defecto */
+}
+
+.carrusel-contenido img.activo {
+    display: block; /* Solo mostramos la imagen activa */
+}
+
+button.prev, button.next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(46, 204, 113, 0.8); /* Verde con transparencia */
+    color: white;
+    border: none;
+    padding: 10px;
+}
+
+button.prev:hover, button.next:hover {
+    background-color: rgba(46, 204, 113, 1); /* Color sólido al pasar el mouse */
+}
+
+button.prev {
+    left: 10px;
+}
+
+button.next {
+    right: 10px;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+}
