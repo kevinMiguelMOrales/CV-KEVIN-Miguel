@@ -10,32 +10,504 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
     <body>
-        <header>
-            <title>Luzia - Diseñadora Multimedia</title>
-            <link rel="stylesheet" href="styles.css">
-        </head>
+        body {
+            margin: 0;
+          }
+      
+          .container_16 {
+            max-width: 860px;
+            width: 80%;
+            margin: 0 auto;
+          }
+      
+          .grid_8,
+          .grid_16 {
+            display: inline;
+            float: left;
+            position: relative;
+            margin-left: 1%;
+            margin-right: 1%;
+          }
+      
+          .container_16 .grid_8 {
+            width: 45.0%;
+            margin-right: 30px;
+          }
+      
+          .container_16 .grid_16 {
+            width: 98.0%;
+          }
+      
+      
+          header {
+            background: #38033a;
+            border-bottom: 10px solid #060606;
+            padding: 19px 5px;
+            overflow: hidden;
+          }
+      
+          header figure {
+            float: left;
+          }
+      
+          header figure img {
+            border-radius: 900px;
+            border: solid #060506;
+            height: 300px;
+            width: 280px;
+            position: relative;
+          }
+      
+          header hgroup {
+            float: right;
+            text-align: center;
+          }
+      
+          header hgroup h1 {
+            color: #ffffff;
+            font: 400 40px oswald, sans-serif;
+            text-shadow:7px 5px 0 rgba(8, 255, 255, 0.3);
+          }
+      
+          header hgroup h2 {
+            color: #4e1414;
+            font-style: italic;
+            font: 400 20px oswald, sans-serif;
+            text-shadow: 1px 1px 0 rgba(0, 0, 0, .3);
+          }
+      
+          #cv {
+            width: 150px;
+            height: 100px;
+            -ms-transform: rotate(15deg);
+            -webkit-transform: rotate(15deg);
+            transform: rotate(15deg);
+            box-shadow: 1px 1px 1px #888888;
+          }
+      
+          /***************
+          /* Main section
+          ***************/
+      
+          p {
+            font: 400 15px oswald, sans-serif;
+          }
+      
+          section[role=main] {
+            padding: 21px 0;
+            overflow: hidden;
+          }
+      
+          section[role=main] > div {
+            margin-top: 63px;
+          }
+      
+          section[role=main] h3 {
+            border-bottom: 1px solid #8d04c7;
+            padding: 0 0 20px 60px;
+            margin-top: 0px;
+            position: relative;
+            font: 400 20px oswald, sans-serif;
+          }
+      
+          .icon {
+            display: block;
+            height: 50px;
+            left: 0;
+            position: absolute;
+            top: -10px;
+            width: 50px;
+          }
+      
+          .experiences ul,
+          .training ul {
+            padding: 0px;
+          }
+      
+          section[role=main] h4 {
+            margin-bottom: 0px;
+          }
+      
+          section[role=main] h4 strong {
+            color: #510946;
+            font-weight: normal;
+            font: 400 17px oswald, sans-serif;
+          }
+      
+          .experiences li,
+          .training li {
+            margin-bottom: 35px;
+            list-style: none;
+          }
+      
+          /**************
+          /* Knowledge
+          ***************/
+      
+          .knowledge .values {
+            padding: 0px;
+          }
+      
+          .knowledge .values li {
+            margin-bottom: 21px;
+            position: relative;
+            list-style: none;
+            font: 400 14px oswald, sans-serif;
+          }
+      
+          .knowledge .values li:after {
+            background: #e1e1e1;
+            bottom: -4px;
+            content: ' ';
+            display: block;
+            height: 5px;
+            position: absolute;
+            width: 100%;
+          }
+      
+          .knowledge .values li span {
+            background: #33a4c9;
+            bottom: -4px;
+            content: ' ';
+            display: block;
+            height: 5px;
+            left: 0;
+            position: absolute;
+            width: inherit;
+            z-index: 1;
+          }
+      
+          .grid_8 ul {
+            padding: 15px;
+          }
+      
+          .grid_8 ul li {
+            font: 400 15px oswald, sans-serif;
+            margin-bottom: 3px;
+            list-style: none;
+          }
+      
+          .grid_8 .information li:before,
+          .grid_8 .contact li:before {
+            content: '\2022';
+            font: 400 15px oswald, sans-serif;
+            margin-bottom: 3px;
+            display: block;
+            position: relative;
+            max-width: 0;
+            max-height: 0;
+            left: -15px;
+            top: 0;
+            color: #33a4c9;
+            font-size: 20px;
+          }
+      
+          .grid_16 .site {
+            background-position: 0 -2px;
+            color: #848484;
+            font: 400 15px oswald, sans-serif;
+          }
+      
+          .date {
+            background-position: 0 -22px;
+            color: #999;
+            font: 400 15px oswald, sans-serif;
+          }
+      
+          .phone {
+            background-position: 0 -40px;
+          }
+      
+          .mail {
+            background-position: 0 -58px;
+          }
+      
+          .blog {
+            background-position: 0 -80px;
+          }
+      
+          .socialmedia {}
+      
+          .social {
+            width: 40px;
+            height: 40px;
+            margin: 10px 38px 25px 38px;
+          }
+      
+          .formation1 {
+            float: left;
+          }
+      
+          .formation2 {
+            float: right;
+          }
+      
+          /**************
+          /* Animaciones
+          ***************/
+      
+          .fadeInDown {
+            -webkit-animation: fadeInDown 4s;
+            animation: fadeInDown 4s;
+          }
+      
+          .fadeInUp {
+            -webkit-animation: fadeInUp 4s;
+            animation: fadeInUp 4s;
+          }
+      
+          .fadeInUp2 {
+            -webkit-animation: fadeInUp2 3.7s;
+            animation: fadeInUp2 3.7s;
+          }
+      
+          .fadeInLeft {
+            -webkit-animation: fadeInLeft 4s;
+            animation: fadeInLeft 4s;
+          }
+      
+          .fadeInRight {
+            -webkit-animation: fadeInRight 4s;
+            animation: fadeInRight 4s;
+          }
+      
+          .appear {
+            -webkit-animation: appear 6s;
+            animation: appear 6s;
+          }
+      
+          @-webkit-keyframes fadeInDown {
+            0% {
+              opacity: 0;
+              transform: translate3d(0, -100%, 0);
+            }
+            100% {
+              opacity: 1;
+              transform: none;
+            }
+          }
+      
+          @-webkit-keyframes fadeInUp {
+            0% {
+              opacity: 0;
+              transform: translate3d(0, 100%, 0);
+            }
+            100% {
+              opacity: 1;
+              transform: none;
+            }
+          }
+      
+          @-webkit-keyframes fadeInUp2 {
+            0% {
+              opacity: 0;
+              transform: translate3d(0, 100%, 0);
+            }
+            100% {
+              opacity: 1;
+              transform: none;
+            }
+          }
+      
+          @-webkit-keyframes fadeInLeft {
+            0% {
+              opacity: 0;
+              transform: translate3d(-100%, 0, 0);
+            }
+            100% {
+              opacity: 1;
+              transform: none;
+            }
+          }
+      
+          @-webkit-keyframes fadeInRight {
+            0% {
+              opacity: 0;
+              transform: translate3d(100%, 0, 0);
+            }
+            100% {
+              opacity: 1;
+              transform: none;
+            }
+          }
+      
+          @-webkit-keyframes appear {
+            0% {
+              opacity: 0;
+            }
+            100% {
+              opacity: 1;
+            }
+          }
+       /* Galería */
+              .gallery {
+                  display: grid;
+                  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+                  gap: 1rem;
+              }
+      
+              .gallery img {
+                  width: 100%;
+                  border-radius: 12px;
+                  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+              }
+      
+              .gallery img:hover {
+                  transform: scale(1.05);
+                  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+              }
+      
+              /* Formulario */
+              form {
+                  display: flex;
+                  flex-direction: column;
+                  gap: 1rem;
+              }
+      
+              input, textarea {
+                  width: 100%;
+                  padding: 0.8rem;
+                  border: 1px solid #000000;
+                  border-radius: 10px;
+                  font-family: 'Roboto', sans-serif;
+              }
+      
+              button {
+                  background: #c36876;
+                  color: #fff;
+                  border: none;
+                  padding: 1rem;
+                  border-radius: 12px;
+                  font-size: 1rem;
+                  cursor: pointer;
+                  transition: background 0.3s ease-in-out;
+                  font-family: 'Montserrat', sans-serif;
+              }
+      
+              button:hover {
+                  background: #feb47b;
+              }
+      
+              /* Footer */
+              footer {
+                  text-align: center;
+                  margin-top: 2rem;
+                  padding: 1rem;
+                  color: #fff;
+                  font-family: 'Poppins', sans-serif;
+              }
+         
+        </style>
+      </head>
+      <body>
+        <!-- Header -->
+        <header class="banner">
+          <div class="container_16">
+          <figure>
+              <img src="https://i.pinimg.com/736x/bf/9b/54/bf9b54346c76b009e6fb25f115036db7.jpg" width="250" alt="Abdiel Lopez Garcia" >
+            </figure>
+            <hgroup>
+              <h1 class="fadeInDown">Abdiel Rafael Lopez Garcia </h1>
+              <h1 class="fadeInUp">Curriculum vitae</h1>
+              <img src="https://payload.cargocollective.com/1/23/750732/13659509/CV-GIF-WeB.gif" width="80px" alt="cv">
+            </hgroup>
+          </div>
+        </header>
+      
+        <!-- Main section -->
+        <section role="main" class="container_16">
+          <div class="grid_16">
+            <!-- About me -->
+            <div class="grid_8 fadeInLeft">
+              <img class="icon" src="https://media.tenor.com/grNPBWmkmuAAAAAM/yo-yoyo.gif" alt="sobre mí">
+              <h3>Sobre mí</h3>
+              <p>Mi nombre es Abdiel Lopez Garcia y soy ingeniero en diseño multimedia</p>
+              <p></p>Actualmente, estoy cursando la carrera de Ingeniería en Diseño Multimedia, con un enfoque particular en el modelado 3D y la cinematografía, áreas que me apasionan profundamente. Poseo un excelente dominio del inglés y me considero una persona amable y con habilidades interpersonales que facilitan la colaboración en equipos de trabajo.
+              <p>Habilidades</p>
+              <p></p>Modelado 3D y Animación: Uso de software como Blender y Maya para crear y animar modelos 3D.
+              <p></p>Desarrollo de Videojuegos: Experiencia con Unity o Unreal Engine para crear videojuegos interactivos.
+              <p></p>Diseño Gráfico: Manejo de herramientas como Photoshop e Illustrator para crear gráficos visuales.
+              <p></p>Cinematografía y Edición de Video: Dominio de Premiere Pro para editar y producir contenido visual.
+              <p></p>Desarrollo Web: Conocimientos en HTML, CSS y JavaScript para crear sitios web interactivos.
+              <p>Correo: abdiellopezgarcia57@gmail.com / Ubicacion: Ciudad del Carmen, Campeche, México</p>
+              
+          
+            </div>
+      
+            <!-- Knowledge -->
+            <div class="grid_8 knowledge fadeInRight">
+              <img class="icon" src= "https://www.memeticadigital.com.mx/Imagenes/Cerebro.Gif" alt="Conocimientos">
+              <h3>Conocimientos</h3>
+              <ul class="values">
+                <li>Cinematografia<span style="width: 90%;"></span></li>
+                <li>Animacion 2D<span style="width: 85%;"></span></li>
+                <li>Modelado 3D<span style="width: 80%;"></span></li>
+                <li>Diseño<span style="width: 80%;"></span></li>
+                <li>Fotografia<span style="width: 95%;"></span></li>
+              </ul>
+            </div>
+          </div>
         <body>
-            <header>
-                <h1>Luzia</h1>
-                <p>Diseñadora Multimedia</p>
-            </header>
-        
-            <section class="carrusel">
-                <img src="proyecto1.jpg" alt="Proyecto 1" class="activo">
-                <img src="proyecto2.jpg" alt="Proyecto 2">
-                <img src="proyecto3.jpg" alt="Proyecto 3">
-                <img src="proyecto4.jpg" alt="Proyecto 4">
-                <button class="prev" onclick="cambiarSlide(-1)">&#10094;</button>
-                <button class="next" onclick="cambiarSlide(1)">&#10095;</button>
-            </section>
-        
-            <footer>
-                <p>&copy; 2025 Luzia. Todos los derechos reservados.</p>
-            </footer>
-        
-            <script src="script.js"></script>
-        </body>
-        </html>
+          <body>
+            <body>
+      <section id="portfolio">
+          <h1>Portafolio</h1>
+          <div class="portfolio-category">
+              <h3>Modelado 3D</h3>
+              <div class="gallery">
+                  <img src="https://i.pinimg.com/736x/3c/7a/0d/3c7a0d56a19fdbfc8a6387a173c37d2a.jpg" alt="Proyecto de Modelado 3D 1">
+                  <img src= "https://i.pinimg.com/736x/a7/6f/bb/a76fbbb82987d78b726e27233fbcb7d8.jpg" alt="Proyecto de Modelado 3D 2">
+                  <img src="https://i.pinimg.com/736x/1c/40/90/1c4090b12825a36915c72b64349d8931.jpg" alt="Proyecto de Modelado 3D 3">
+                </body>
+                </div>
+          </div>
+          <div class="portfolio-category">
+              <h3>Dibujo Digital</h3>
+              <div class="gallery">
+                  <img src="https://i.pinimg.com/736x/8f/50/d8/8f50d85f69a358736e08d4cec3c237f2.jpg" alt="Proyecto de animacion 1">
+                  <img src="https://i.pinimg.com/736x/c5/fd/5f/c5fd5fc32db75a173280febe0bd45bf6.jpg" alt="Animacion2">
+                  <img src="https://i.pinimg.com/736x/ab/8a/53/ab8a5322e36c8ab9b1d1f9a24f591d90.jpg" alt="Animacio3">
+              </div>
+          </div>
+          <div class="portfolio-category">
+              <h3>Fotografia</h3>
+              <div class="gallery">
+                  <img src="https://i.pinimg.com/736x/9d/39/9d/9d399d5e1c55500c0f92cb7d16bc1c5b.jpg" alt="Proyecto de Diseño 1">
+                  <img src="https://i.pinimg.com/736x/47/5d/2f/475d2f3ad7c4211e5e2bf521169eef2b.jpg" alt="Proyecto de Diseño 2">
+                  <img src="https://i.pinimg.com/736x/9c/e5/a9/9ce5a94e18583e60ea6752b80675baa0.jpg" alt="Proyecto de Diseño 3">
+              </div>
+            </div>
+            <div class="portfolio-category">
+                <h3>Diseño</h3>
+                <div class="gallery">
+                    <img src="https://i.pinimg.com/736x/8f/22/ec/8f22ec7022830a1651e6a0ead7d2b90b.jpg" alt="Proyecto de Diseño 1">
+                    <img src="https://i.pinimg.com/736x/c1/57/2d/c1572d6615fc158ce63964165c4f3d82.jpg" alt="Proyecto de Diseño 2">
+                    <img src="https://i.pinimg.com/736x/a1/04/8c/a1048c9b9df68a3e54c4a54de2c99d57.jpg" alt="Proyecto de Diseño 3">
+                </div>
+              </div>
+              <div class="portfolio-category">
+                  <h3>Desarrollo Web</h3>
+                  <div class="gallery">
+                      <img src="https://i.pinimg.com/736x/4d/be/03/4dbe03ad0ae550b3abb11220151ea2be.jpg" alt="Proyecto de Diseño 1">
+                      <img src="https://i.pinimg.com/736x/4d/be/03/4dbe03ad0ae550b3abb11220151ea2be.jpg" alt="Proyecto de Diseño 2">
+                      <img src="https://i.pinimg.com/736x/4d/be/03/4dbe03ad0ae550b3abb11220151ea2be.jpg" alt="Proyecto de Diseño 3">
+                  </div>
+          </div>
+      </section>
+      
+      <section id="contact">
+          <h2>Contacto</h2>
+          <p>¿Te gustaría colaborar? ¡Contáctame y ve hasta donde podemos llegar!</p>
+          <form>
+              <input type="text" placeholder="Tu nombre" required>
+              <input type="email" placeholder="Tu correo" required>
+              <textarea placeholder="Tu mensaje" required></textarea>
+              <button type="submit">Enviar</button>
+          </form>
+      </section>
+      
+      </body>
+      </html>
         
 
     
